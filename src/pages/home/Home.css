@@ -15,22 +15,22 @@
 
 .name h2 {
     text-align: start;
-    margin-left: 3%;
+    margin-left: .5rem;
 }
 
 
 .hero {
     color: #fff;
     font-family: Merriweather;
-    margin-left: 5%;
+    margin-left: 4rem;
 }
 
 .hero-title {
     display: flex;
     gap: 1rem;
     align-items: center;
-    margin-left: 5%;
-    margin-top: 12%;
+    margin-left: 5rem;
+    margin-top: 15rem;
     
 }
 
@@ -47,17 +47,17 @@
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    margin-top: 1%;
-    margin-left: 10.5%;
+    margin-top: 1rem;
+    margin-left: 12rem;
     
 }
 
 .hero-text ul {
-    margin-left: 1%;
+    margin-left: 1rem;
 }
 
 .hero-text h2 {
-    margin-bottom: 1%;
+    margin-bottom: 1rem;
 }
 
 .hero-btns {
@@ -65,8 +65,8 @@
     flex-direction: column;
     width: 10rem;
     gap: .5rem;
-    margin-top: 2%;
-    margin-left: 10.5%;
+    margin-top: 2rem;
+    margin-left: 12rem;
 }
 
 .hero-btn {
@@ -86,11 +86,32 @@
 }
 
 @media only screen and (max-width: 27rem) {
+
+    .name {
+        top: 1rem;
+        right: 1rem;
+        left: auto;
+    }
+
+    .name p {  
+        text-align: end;
+    }
+
+    .name h2 {
+        text-align: end;
+        margin-left: 0;
+    }
+
+    .hero {
+        margin: 0;
+    }
+
     .hero-title {
         flex-direction: column;
         align-items: start;
-        gap: 0;
-        margin-top: 15%;
+        gap: 1rem;
+        margin-top: 10rem;
+        margin-left: 1rem
     }
 
     .hero-title h3 {
@@ -105,11 +126,16 @@
 
     .hero-text {
         font-size: .75rem;
+        margin-left: 1rem
     }
 
     .hero-text ul {
         font-size: 1rem;
         margin-left: 5%;
         margin-bottom: 5%;
+    }
+
+    .hero-btns {
+        margin-left: 1rem
     }
 }
