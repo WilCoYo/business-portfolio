@@ -1,0 +1,115 @@
+.name {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    color: #fff;
+    width: 10rem;
+    font-family: Roboto;
+}
+
+.name p {
+    font-size: 4rem;
+    text-align: start;
+    
+}
+
+.name h2 {
+    text-align: start;
+    margin-left: 3%;
+}
+
+
+.hero {
+    color: #fff;
+    font-family: Merriweather;
+    margin-left: 5%;
+}
+
+.hero-title {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 12%;
+    
+}
+
+.hero-title h1 {
+    font-size: 5rem;
+   
+}
+
+.hero-title h3 {
+    text-align: end;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 1%;
+    margin-left: 10.5%;
+    
+}
+
+.hero-text ul {
+    margin-left: 1%;
+}
+
+.hero-text h2 {
+    margin-bottom: 1%;
+}
+
+.hero-btns {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    gap: .5rem;
+    margin-top: 2%;
+    margin-left: 10.5%;
+}
+
+.hero-btn {
+    padding: 1rem;
+    border-radius: 4rem;
+    border: none;
+    background: rgba(39, 39, 39, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+}
+
+.hero-btn:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 27rem) {
+    .hero-title {
+        flex-direction: column;
+        align-items: start;
+        gap: 0;
+        margin-top: 15%;
+    }
+
+    .hero-title h3 {
+        text-align: start;
+        width: 100%;
+    }
+
+    .hero-title h1 {
+        font-size: 4rem;
+       
+    }
+
+    .hero-text {
+        font-size: .75rem;
+    }
+
+    .hero-text ul {
+        font-size: 1rem;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+}
