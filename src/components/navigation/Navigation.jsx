@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 import './Navigation.css'
 import MENUICON from '../../assets/images/menuIcon.png'
@@ -9,17 +9,42 @@ import CLOSEICON from '../../assets/images/closeIcon.png'
 
 function Navigation() {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
+
 
   return (
     <>
     <div className='nav-bar desktop'>
       <ul className='navigation'>
-        <li onClick={() => navigate('/')}>Home</li>
-        <li onClick={() => navigate('/employer')}>About me</li>
-        <li onClick={() => navigate('/experience')}>Experience</li>
-        <li onClick={() => navigate('/projects')}>Projects</li>
+        <li onClick={() => navigate('/')}
+            className={isActive('/') ? 'active' : ''}
+        >
+          Home
+        </li>
+        <li 
+            onClick={() => navigate('/employer')}
+            className={isActive('/employer') ? 'active' : ''}
+        >
+          About me
+        </li>
+        <li 
+            onClick={() => navigate('/experience')}
+            className={isActive('/experience') ? 'active' : ''}
+        >
+          Experience
+        </li>
+        <li 
+            onClick={() => navigate('/projects')}
+            className={isActive('/projects') ? 'active' : ''}
+        >
+          Projects
+        </li>
       </ul>
     </div>
 

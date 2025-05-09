@@ -59,7 +59,11 @@
     z-index: 20;
 }
 
+.active {
 
+    background: rgba(65, 64, 64, 0.15);
+    backdrop-filter: blur(15px);
+}
 
 @media only screen and (max-width: 27rem) {
    .desktop {

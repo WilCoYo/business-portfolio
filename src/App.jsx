@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { useEffect } from 'react'
 
-import EmployerHome from './pages/employer/EmployerHome'
 import Home from './pages/home/Home'
+import EmployerHome from './pages/employer/EmployerHome'
+import Experience from './pages/experience/Experience'
+
 import './App.css'
 
 import RINGS from 'vanta/src/vanta.rings'
@@ -33,6 +35,7 @@ function App() {
       <Routes>
          <Route path='/' element={<Home />}/>
          <Route path='/employer' element={<EmployerHome />} />
+         <Route path='/experience' element={<Experience />} />
       </Routes>
 
     </Router>

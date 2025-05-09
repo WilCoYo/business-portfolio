@@ -1,0 +1,27 @@
+.experience {
+    height: 100dvh;
+    max-height: 100dvh;
+    color: #fff;
+    font-family: Merriweather;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: space-around;
+    
+}
+
+.experience ul {
+   
+}
+
+.experience li {
+    list-style: none;
+    line-height: 2rem;
+}
+
+.experience h4 {
+    margin: .5rem 0;
+    text-indent: 1rem;
+}
+
