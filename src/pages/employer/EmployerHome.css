@@ -6,8 +6,7 @@
     flex-direction: column;
     align-items: center;
 
-   
-
+    
     margin: 5rem 5% auto 5%;
 }
 
@@ -27,6 +26,8 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 2rem;
     line-height: 1.5rem;
+    
+  
 }
 
 
