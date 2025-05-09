@@ -1,0 +1,38 @@
+.about-me {
+    max-height: 100dvh;
+    width: 75%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+
+    margin: 5rem 5% auto 5%;
+}
+
+.selfieIMG {
+    width: 20rem;
+    height: 20rem;
+}
+
+.about-me p {
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    font-family: Roboto;
+    background: rgba(39, 39, 39, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    line-height: 1.5rem;
+}
+
+
+@media only screen and (max-width: 27rem) {
+    .about-me {
+        width: 90%;
+        margin: 5rem 5%;
+    }
+}
