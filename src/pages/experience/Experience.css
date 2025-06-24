@@ -1,22 +1,46 @@
-.experience {
+
+
+.experience-page {
     height: 100dvh;
     max-height: 100dvh;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 20%;
+    
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+
+
+
+.experience {
     color: #fff;
     font-family: Merriweather;
-    margin-left: 2rem;
     display: flex;
     flex-direction: column;
-   
-    justify-content: space-around;
-    
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
 }
 
-.experience ul {
-   
+.experience h2 {
+    font-size: 2rem;
 }
 
-.experience li {
-    list-style: none;
+.experience h4 {
+    font-family: Roboto;
+}
+
+.cell {
+    padding: 2rem;
+    background: rgba(39, 39, 39, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+}
+
+.cell li {
     line-height: 2rem;
 }
 
@@ -25,3 +49,50 @@
     text-indent: 1rem;
 }
 
+.education-skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    max-height: 100vh;
+   
+    
+  
+}
+
+
+
+.codecademy-logo {
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.americorps-logo {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+.education-skills ul {
+    margin-left: 1rem;
+    color: white;
+    font-family: Merriweather;
+}
+
+.education-skills li {
+    line-height: 2rem;
+}
+
+
+
+@media only screen and (min-width: 1921px) {
+  .education-skills {
+    margin-top: 16rem;
+    height: 100%; 
+  }
+
+  .experience-page {
+    overflow: hidden;
+  }
+}

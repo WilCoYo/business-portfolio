@@ -1,13 +1,24 @@
+
+.about-me-page {
+    display: flex;
+}
+
+.nav-space {
+    width: 15%;
+}
+
 .about-me {
+    height: 100dvh;
     max-height: 100dvh;
-    width: 75%;
+    width: 80rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
+    margin: 0 auto;
     
-    margin: 5rem 5% auto 5%;
 }
 
 .selfieIMG {
