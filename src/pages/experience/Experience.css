@@ -3,12 +3,12 @@
 .experience-page {
     height: 100dvh;
     max-height: 100dvh;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 20%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 2rem;
-    padding: 1rem;
     max-width: 100%;
+    padding-left: 2rem;
 }
 
 
@@ -20,54 +20,91 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: fit-content;
     gap: 2rem;
-    width: 100%;
+    height: 100vh;
 }
 
 .experience h2 {
     font-size: 2rem;
 }
 
-.experience h4 {
-    font-family: Roboto;
-}
 
-.cell {
-    padding: 2rem;
+.cell1 {
+    color: #fff;
+    font-family: Merriweather;
+    padding: .75rem 2rem;
+    width: fit-content;
     background: rgba(39, 39, 39, 0.25);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 2rem;
 }
 
-.cell li {
+.cell1 h4 {
+    font-family: Roboto;
+    padding-bottom: .5rem;
+    text-indent: 1rem;
+    margin: .5rem 0;
+}
+
+.cell1 li {
     line-height: 2rem;
 }
 
-.experience h4 {
-    margin: .5rem 0;
-    text-indent: 1rem;
+
+.cell2 {
+    color: #fff;
+    font-family: Merriweather;
+    padding: .75rem 2rem;
+    width: 50%;
+    background: rgba(39, 39, 39, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
 }
+
+.cell2 h4 {
+    font-family: Roboto;
+    padding-bottom: .5rem;
+    text-indent: 1rem;
+    margin: .5rem 0;
+}
+
+
+.cell2 li {
+    line-height: 2rem;
+}
+
 
 .education-skills {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    justify-content: start;
     gap: 2rem;
-    max-height: 100vh;
-   
-    
+    margin-top: 1rem;
+    margin-right: 15%;
   
 }
 
-
+.codecademy {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
 
 .codecademy-logo {
     width: 15rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
+.americorps {
+    
+    align-items: center;
+}
 
+.americorps ul {
+    padding-left: 1rem;
+}
 
 .americorps-logo {
     width: 5rem;
@@ -75,7 +112,6 @@
 }
 
 .education-skills ul {
-    margin-left: 1rem;
     color: white;
     font-family: Merriweather;
 }
@@ -87,12 +123,4 @@
 
 
 @media only screen and (min-width: 1921px) {
-  .education-skills {
-    margin-top: 16rem;
-    height: 100%; 
-  }
-
-  .experience-page {
-    overflow: hidden;
-  }
 }

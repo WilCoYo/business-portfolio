@@ -10,10 +10,27 @@ function Experience() {
   return (
     <div className='experience-page'>
 
-     
+      <div className='education-skills'>
+        <div className='codecademy cell1'>
+          <img src= {code_cademy} className='codecademy-logo'></img>
+          <ul>
+            <li>Full-Stack Engineer Professional Certification</li>
+            <li>Front End Engineer Professional Certification</li>
+          </ul>
+        </div>
 
-      <div className='experience'>
-          <ul className='codeNinjas cell'>
+        <div className='americorps cell1'>
+          <img src= {americorps} className='americorps-logo'></img>
+          <ul>
+            <li>Americorps National Civilian Corps (NCCC)</li>
+            <li>AmeriCorps City Year, Chicago</li>
+          </ul>
+        </div>
+ 
+      </div>
+
+      
+          <ul className='codeNinjas cell2'>
               <h2>Code Ninjas</h2>
               <h4>Code Instructor</h4>
               <li>Guided learners to aid understanding and knowledge of technology and coding concepts</li>
@@ -22,7 +39,7 @@ function Experience() {
               <li>Leveraged educator background to inspire learners’ confidence in technology, math, and science</li>
           </ul>
 
-          <ul className='apple cell'>
+          <ul className='apple cell2'>
               <h2>Apple</h2>
               <h4>Technical Expert</h4>
               <li>Interpreted customer concerns and delivered appropriate product diagnoses and solutions</li>
@@ -31,7 +48,7 @@ function Experience() {
               <li>Troubleshot device issues with customers and communicated appropriate solutions</li>
           </ul>
 
-          <ul className='pics cell'>
+          <ul className='pics cell2'>
               <h2>PICS ITECH</h2>
               <h4>Client Account Manager</h4>
               <li>Managed CRM account data and quickly resolved service tickets queue for 60+ clients</li>
@@ -43,29 +60,7 @@ function Experience() {
           
          
           <Navigation />
-      </div>
-
-      <div className='education-skills'>
-        <div className='codecademy cell'>
-          <img src= {code_cademy} className='codecademy-logo'></img>
-          <ul>
-            <li>Full-Stack Engineer Professional Certification</li>
-            <li>Front End Engineer Professional Certification</li>
-          </ul>
-        </div>
-
-        <div className='americorps cell'>
-          <img src= {americorps} className='americorps-logo'></img>
-          <ul>
-            <li>Americorps National Civilian Corps (NCCC)</li>
-            <li>AmeriCorps City Year, Chicago</li>
-          </ul>
-        </div>
-
-        
-      </div>
-
-      <div className='nav-space'></div>
+      
 
     </div>
   )
