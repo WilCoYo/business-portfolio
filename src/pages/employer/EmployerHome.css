@@ -1,6 +1,9 @@
 
 .about-me-page {
     display: flex;
+    height: 100dvh;
+    justify-content: center;
+    align-content: center;
 }
 
 .nav-space {
@@ -8,17 +11,12 @@
 }
 
 .about-me {
-    height: 100dvh;
-    max-height: 100dvh;
     width: 80rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
-    margin: 0 auto;
-    
+    max-height: 100dvh;
+    margin-top: 10%;
 }
 
 .selfieIMG {
@@ -32,6 +30,8 @@
     text-align: center;
     color: #fff;
     font-family: Roboto;
+
+
     background: rgba(39, 39, 39, 0.25);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -45,6 +45,10 @@
 @media only screen and (max-width: 27rem) {
     .about-me {
         width: 90%;
-        margin: 5rem 5%;
+        margin: 1rem 5%;
+    }
+
+    .nav-space {
+        display: none;
     }
 }

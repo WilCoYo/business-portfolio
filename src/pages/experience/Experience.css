@@ -1,8 +1,7 @@
 
 
 .experience-page {
-    height: 100dvh;
-    max-height: 100dvh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,5 +121,32 @@
 
 
 
-@media only screen and (min-width: 1921px) {
+@media only screen and (max-width: 27rem) {
+.codecademy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.education-skills {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.cell1 {
+    width: fit-content;
+}
+
+.cell2 {
+    width: fit-content;
+   
+}
+
+
+
+.experience-page {
+    padding: 0 2rem;
+}
+
 }
