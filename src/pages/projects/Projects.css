@@ -34,3 +34,19 @@
 }
 
 
+@media only screen and (max-width: 27rem) {
+    .projects-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .project {
+       flex-direction: column;
+    }
+
+    .project-tech-stack {
+        margin: 1rem 0rem;
+    }
+
+}
