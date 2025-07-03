@@ -131,7 +131,8 @@
 .education-skills {
     display: flex;
     flex-direction: column;
-  
+    margin-top: 4rem;
+    width: 100%;
 }
 
 .cell1 {
