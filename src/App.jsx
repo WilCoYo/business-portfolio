@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import Home from './pages/home/Home'
 import EmployerHome from './pages/employer/EmployerHome'
 import Experience from './pages/experience/Experience'
+import Projects from './pages/projects/Projects'
 
 import './App.css'
 
@@ -36,6 +37,7 @@ function App() {
          <Route path='/' element={<Home />}/>
          <Route path='/employer' element={<EmployerHome />} />
          <Route path='/experience' element={<Experience />} />
+         <Route path='/projects' element={<Projects />} />
       </Routes>
 
     </Router>
