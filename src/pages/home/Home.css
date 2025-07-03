@@ -23,7 +23,6 @@
 
 .hero {
     color: #fff;
-    font-family: Merriweather;
     margin-left: 4rem;
 }
 
@@ -38,11 +37,12 @@
 
 .hero-title h1 {
     font-size: 5rem;
-   
+    font-family: Merriweather;
 }
 
 .hero-title h3 {
     text-align: end;
+    font-family: Roboto;
 }
 
 .hero-text {
@@ -50,7 +50,7 @@
     flex-direction: column;
     gap: .5rem;
     margin-left: 12rem;
-    
+    font-family: Roboto;
 }
 
 .hero-text ul {
@@ -108,7 +108,7 @@
     .hero-title h3 {
         text-align: start;
         width: 100%;
-        
+        text-decoration: underline;
     }
 
     .hero-title h1 {
@@ -123,6 +123,8 @@
 
     .hero-text h2 {
         margin-bottom: 2rem;
+        font-style: italic;
+        text-indent: 1rem;
     }
 
     .hero-text ul {
