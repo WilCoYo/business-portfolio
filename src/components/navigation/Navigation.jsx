@@ -47,23 +47,16 @@ function Navigation() {
         >
           Projects
         </li>
-        <button  
-            className='resume-btn'
-            >
-
+        <button className='resume-btn'>
             <a 
               href= {resume}
               target='_blank'
               rel="noreferrer"
               download
             >
-              <p 
-                id='resume-word'
-              >
-                Resume
-              </p>
+              <p id='resume-word'>Resume</p>
             </a>
-            </button>
+          </button>
       </ul>
     </div>
 
@@ -87,23 +80,16 @@ function Navigation() {
           <li onClick={() => navigate('/employer')}>About me</li>
           <li onClick={() => navigate('/experience')}>Experience</li>
           <li onClick={() => navigate('/projects')}>Projects</li>
-          <button  
-            className='resume-btn'
-            >
-
+          <button className='resume-btn'>
             <a 
               href= {resume}
               target='_blank'
               rel="noreferrer"
               download
             >
-              <p 
-                id='resume-word'
-              >
-                Resume
-              </p>
+              <p id='resume-word'>Resume</p>
             </a>
-            </button>
+          </button>
         </ul>  
     </div>
 
