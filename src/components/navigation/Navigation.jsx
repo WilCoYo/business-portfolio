@@ -4,6 +4,8 @@ import { useState } from 'react'
 import './Navigation.css'
 import MENUICON from '../../assets/images/menuIcon.png'
 import CLOSEICON from '../../assets/images/closeIcon.png'
+import DOWNLOADICON from '../../assets/images/download_icon.svg'
+import resume from '../../assets/files/Resume.pdf'
 
 
 
@@ -45,6 +47,24 @@ function Navigation() {
         >
           Projects
         </li>
+        <button  
+            className='resume-btn'
+            >
+
+            <a 
+              href= {resume}
+              target='_blank'
+              rel="noreferrer"
+              download
+            >
+            <p 
+              id='resume-word'
+            >
+              Resume
+            </p>
+            <img src={DOWNLOADICON} className="download-icon" alt='download icon'/>
+            </a>
+            </button>
       </ul>
     </div>
 
@@ -68,6 +88,7 @@ function Navigation() {
           <li onClick={() => navigate('/employer')}>About me</li>
           <li onClick={() => navigate('/experience')}>Experience</li>
           <li onClick={() => navigate('/projects')}>Projects</li>
+          <li>Resume</li>
         </ul>  
     </div>
 

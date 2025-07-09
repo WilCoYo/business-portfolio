@@ -10,14 +10,29 @@
     min-height: 50%;
     margin: 1rem;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
 
     color: white;
 
     background: rgba(39, 39, 39, 0.25);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 2rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+.project a {
+    text-decoration: none;
+    color: white;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project img:hover {
+    scale: 1.025;
 }
 
 .project-tech-stack {
@@ -27,6 +42,7 @@
     text-align: center;
     gap: 2rem;
     font-family: Roboto;
+    margin: 0rem 1rem;
 }
 
 .project-tech-stack h3 {
@@ -43,7 +59,8 @@
     }
 
     .project {
-       flex-direction: column;
+       grid-template-columns: 1fr;
+       border-radius: 0 0 2rem 2rem;
     }
 
     .project-tech-stack {
