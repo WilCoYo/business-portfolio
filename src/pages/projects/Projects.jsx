@@ -15,7 +15,7 @@ function Projects() {
                 <img src={AniRate} alt="AniRate website logo" />
             </a>
             <div className="project-tech-stack">
-                <a href='https://scholarbase-production.up.railway.app/' target='_blank' rel='norefferer'>
+                <a href='https://anime-rate.netlify.app/' target='_blank' rel='norefferer'>
                     <h3>Anime Watchlist and Rating Website</h3>
                 </a>
                 <p>Has full login and credential functionality, including custom watchlists and profiles.</p>
@@ -30,7 +30,7 @@ function Projects() {
                 <img src={HiFi} alt="Hi-Fi Wine and Spirits Logo" />
             </a>
             <div className="project-tech-stack">
-                <a href='https://scholarbase-production.up.railway.app/' target='_blank' rel='norefferer'>
+                <a href='https://hi-fi-wineandspirits.netlify.app/' target='_blank' rel='norefferer'>
                     <h3>An artisan Wine & Spirits company.</h3>
                 </a>
                 <p>Made completely with vanilla HTML, CSS, and JavaScript. There are no frameworks or dependencies used.</p>
